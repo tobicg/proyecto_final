@@ -253,7 +253,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 75vh; }
+  min-height: 80vh; }
   .main-sucursales .main-sucursales-title {
     font-family: "Bebas Neue", cursive;
     font-size: 70px;
@@ -282,7 +282,7 @@
   .main-sucursales .main-sucursales-map {
     margin-bottom: 40px;
     width: 75%;
-    height: 100vh; }
+    min-height: 70vh; }
 
 .nosotros {
   background-image: url(../img/personas.jpg);
@@ -290,7 +290,7 @@
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 75vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,7 +301,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     background: rgba(0, 0, 0, 0.5); }
     .nosotros .nosotros-div .nosotros-div-title {
       font-family: "Bebas Neue", cursive;
@@ -352,16 +352,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; }
+  min-height: 80vh; }
   .contacto .contacto-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 60%; }
+    @media (max-width: 768px) {
+      .contacto .contacto-card {
+        width: 70%; } }
+    @media (max-width: 576px) {
+      .contacto .contacto-card {
+        width: 80%; } }
     .contacto .contacto-card .contacto-card-h2 {
       font-family: "Bebas Neue", cursive;
       font-size: 70px;
+      margin-top: 40px;
       margin-bottom: 40px;
       color: #6a041a; }
       @media (max-width: 1400px) {
@@ -411,8 +418,7 @@
         height: 400px;
         padding: 15px;
         font-family: "Roboto", sans-serif;
-        border: none;
-        margin-bottom: 30px; }
+        border: none; }
         @media (max-width: 1400px) {
           .contacto .contacto-card .contacto-card-form .contacto-card-form-textarea {
             height: 350px; } }
@@ -426,6 +432,7 @@
         font-size: 18px;
         background-color: #9a0526;
         color: white;
-        border: none; }
+        border: none;
+        margin: 40px; }
 
 /*# sourceMappingURL=main.css.map */

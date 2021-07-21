@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
 
     .contacto-card {
         display: flex;
@@ -12,9 +12,18 @@
         justify-content: center;
         width: 60%;
 
+        @media (max-width: 768px) {
+            width: 70%;
+        }
+        
+        @media (max-width: 576px) {
+            width: 80%;
+        }
+
         .contacto-card-h2 {
             font-family: $title;
             font-size: 70px;
+            margin-top: 40px;
             margin-bottom: 40px;
             color: $color2;
 
@@ -79,7 +88,6 @@
                 padding: 15px;
                 font-family: $text;
                 border: none;
-                margin-bottom: 30px;
 
                 @media (max-width: 1400px) {
                     height: 350px;
@@ -98,6 +106,7 @@
                 background-color: $color3;
                 color: white;
                 border: none;
+                margin: 40px;
             }
         }
     }
