@@ -1,11 +1,11 @@
-.footer-index {
+.footer {
     background-color: $color1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     
-    .footer-index-title {
+    .footer-title {
         font-family: $title;
         font-size: 50px;
         color: white;
@@ -32,9 +32,10 @@
         }
     }
 
-    .footer-index-icons {
+    .footer-icons {
         margin: 10px 0px 20px 0px;
-            .footer-index-icons-link {
+
+            .footer-icons-link {
                 color: white;
                 margin: 10px;
                 transition: 0.2s;
