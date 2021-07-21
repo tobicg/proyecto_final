@@ -1,0 +1,83 @@
+.header {
+    
+    .header-nav {
+        background-color: $color1;
+
+        .header-nav-title {
+            font-family: $title;
+            font-size: 100px;
+            margin-left: 30px;
+            width: 20%;
+
+            @media (max-width: 1400px) {
+                font-size: 90px;
+                margin-left: 25px;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 85px;
+                margin-left: 20px;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 80px;
+                margin-left: 15px;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 75px;
+                margin-left: 10px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 50px;
+                margin-left: 5px;
+            }
+        }
+
+        .header-nav-div {
+
+            .header-nav-div-ul {
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+                margin-right: 30px;
+                
+                .header-nav-div-ul-li {
+                    font-family: $title;
+                    font-size: 50px;
+                    transition: 0.2s;
+
+                    @media (max-width: 1400px) {
+                        font-size: 35px;
+                    }
+
+                    @media (max-width: 1200px) {
+                        font-size: 30px;
+                    }
+
+                    @media (max-width: 992px) {
+                        font-size: 30px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 30px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 30px;
+                    }
+
+                    a {
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $color5;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.main-index {
+
+    .carousel {
+
+        .carousel-inner {
+            position: relative;
+
+            .main-index-txt {
+                position: absolute;
+                margin: 200px;
+                z-index: 1000;
+
+                @media (max-width: 1400px) {
+                    margin: 100px;
+                }
+
+                @media (max-width: 1200px) {
+                    margin: 80px;
+                }
+
+                @media (max-width: 992px) {
+                    margin: 60px;
+                }
+
+                @media (max-width: 768px) {
+                    margin: 40px;
+                }
+
+                @media (max-width: 576px) {
+                    margin: 30px;
+                }
+
+                .main-index-txt-title {
+                    color: white;
+                    font-family: $title;
+                    font-size: 110px;
+
+                    @media (max-width: 1400px) {
+                        font-size: 90px;
+                    }
+
+                    @media (max-width: 1200px) {
+                        font-size: 80px;
+                    }
+
+                    @media (max-width: 992px) {
+                        font-size: 70px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 60px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 40px;
+                    }
+                }
+        
+                .main-index-txt-p {
+                    color: white;
+                    font-family: $title;
+                    font-size: 40px;
+
+                    @media (max-width: 1400px) {
+                        font-size: 35px;
+                    }
+
+                    @media (max-width: 1200px) {
+                        font-size: 35px;
+                    }
+
+                    @media (max-width: 992px) {
+                        font-size: 35px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 30px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+            
+            #slide1 {
+                background-image: url(./../img/bg1.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                min-height: 90vh;
+
+                @media (max-width: 576px) {
+                    min-height: 75vh;
+                }
+            }
+
+            #slide2 {
+                background-image: url(./../img/bg2.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                min-height: 90vh;
+
+                @media (max-width: 576px) {
+                    min-height: 75vh;
+                }
+            }
+
+            #slide3 {
+                background-image: url(./../img/bg3.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                min-height: 90vh;
+
+                @media (max-width: 576px) {
+                    min-height: 75vh;
+                }
+            }
+
+            #slide4 {
+                background-image: url(./../img/bg4.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                min-height: 90vh;
+
+                @media (max-width: 576px) {
+                    min-height: 75vh;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.main-carta-fondo {
+    background-image: url(../img/restaurant.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-carta-fondo-listado {
+        margin: 60px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        color: white;
+        background-color: rgba(26, 26, 26, 0.801);
+        text-align: center;
+        justify-content: center;
+
+        @media (max-width: 1400px) {
+            width: 90%;
+        }
+        
+        @media (max-width: 1200px) {
+            width: 90%;
+        }
+        
+        @media (max-width: 992px) {
+            width: 90%;
+        }
+        
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+        
+        @media (max-width: 576px) {
+            width: 90%;
+        }
+
+        .main-carta-fondo-listado-item {
+            margin: 50px;
+            font-family: $text;
+            font-size: 24px;
+
+            @media (max-width: 1400px) {
+                margin: 30px 40px;
+                font-size: 20px;
+            }
+            
+            @media (max-width: 1200px) {
+                margin: 30px 40px;
+                font-size: 16px;
+            }
+            
+            @media (max-width: 992px) {
+                margin: 30px 40px;
+            }
+            
+            @media (max-width: 768px) {
+                margin: 30px 40px;
+            }
+            
+            @media (max-width: 576px) {
+                margin: 30px 40px;
+            }
+        }
+    }
+}

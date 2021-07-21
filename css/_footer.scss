@@ -1,0 +1,47 @@
+.footer-index {
+    background-color: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .footer-index-title {
+        font-family: $title;
+        font-size: 50px;
+        color: white;
+        margin-top: 15px;
+
+        @media (max-width: 1400px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 45px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 30px;
+        }
+    }
+
+    .footer-index-icons {
+        margin: 10px 0px 20px 0px;
+            .footer-index-icons-link {
+                color: white;
+                margin: 10px;
+                transition: 0.2s;
+
+                &:hover {
+                    color: $color5;
+                }
+            }
+    }
+}
