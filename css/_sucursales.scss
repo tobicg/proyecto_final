@@ -1,46 +1,131 @@
 .main-sucursales {
     background-color: rgb(165, 165, 165);
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
     align-items: center;
-    flex-direction: column;
-    min-height: 80vh;
 
-    .main-sucursales-title {
-        font-family: $title;
-        font-size: 70px;
-        margin: 40px;
-        color: $color2;
+    .main-sucursales-div1 {
+        padding: 20px 10px 10px 20px;
 
-        @media (max-width: 1400px) {
-            font-size: 70px;
-            margin: 20px;
-        }
-        
-        @media (max-width: 1200px) {
-            font-size: 70px;
-            margin: 20px;
-        }
-        
-        @media (max-width: 992px) {
-            font-size: 60px;
-            margin: 20px;
-        }
-        
-        @media (max-width: 768px) {
-            font-size: 50px;
-            margin: 20px;
-        }
-        
-        @media (max-width: 576px) {
-            font-size: 40px;
-            margin: 20px;
+        #sucursal1 {
+            color: white;
+            text-decoration: none;
+            background-image: url(../img/sucursal1.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 45vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 20px black;
+            transition: 0.4s;
+    
+            &:hover {
+                box-shadow: 0px 0px 20px 10px black;
+                z-index: 1000;
+                transform: scale(1.03);
+            }
+    
+            h2 {
+                font-family: $title;
+                font-size: 70px;
+            }
         }
     }
 
-    .main-sucursales-map {
-        margin-bottom: 40px;
-        width: 75%;
-        min-height: 70vh;
+    .main-sucursales-div2 {
+        padding: 20px 20px 10px 10px;
+
+        #sucursal2 {
+            color: white;
+            text-decoration: none;
+            background-image: url(../img/sucursal2.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 45vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 20px black;
+            transition: 0.4s;
+    
+            &:hover {
+                box-shadow: 0px 0px 20px 10px black;
+                z-index: 1000;
+                transform: scale(1.03);
+            }
+    
+            h2 {
+                font-family: $title;
+                font-size: 70px;
+            }
+        }
     }
+
+    .main-sucursales-div3 {
+        padding: 10px 10px 20px 20px;
+
+        #sucursal3 {
+            color: white;
+            text-decoration: none;
+            background-image: url(../img/sucursal3.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 45vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 20px black;
+            transition: 0.4s;
+    
+            &:hover {
+                box-shadow: 0px 0px 20px 10px black;
+                z-index: 1000;
+                transform: scale(1.03);
+            }
+    
+            h2 {
+                font-family: $title;
+                font-size: 70px;
+            }
+        }
+    }
+    
+    .main-sucursales-div4 {
+        padding: 10px 20px 20px 10px;
+
+        #sucursal4 {
+            color: white;
+            text-decoration: none;
+            background-image: url(../img/sucursal4.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 45vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 20px black;
+            transition: 0.4s;
+    
+            &:hover {
+                box-shadow: 0px 0px 20px 10px black;
+                z-index: 1000;
+                transform: scale(1.03);
+            }
+    
+            h2 {
+                font-family: $title;
+                font-size: 70px;
+            }
+        }
+    } 
 }

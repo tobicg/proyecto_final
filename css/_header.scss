@@ -1,37 +1,38 @@
 .header {
-    
+    width: 100%;
+    background-color: $color1;
+    display: flex;
+    justify-content: center;
+
     .header-nav {
-        background-color: $color1;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding: 0;
 
         .header-nav-title {
             font-family: $title;
-            font-size: 100px;
-            margin-left: 30px;
-            width: 20%;
+            font-size: 60px;
+            padding: 2px;
 
             @media (max-width: 1400px) {
-                font-size: 90px;
-                margin-left: 25px;
+                font-size: 75px;
             }
             
             @media (max-width: 1200px) {
-                font-size: 85px;
-                margin-left: 20px;
+                font-size: 70px;
             }
             
             @media (max-width: 992px) {
-                font-size: 80px;
-                margin-left: 15px;
+                font-size: 65px;
             }
             
             @media (max-width: 768px) {
-                font-size: 75px;
-                margin-left: 10px;
+                font-size: 60px;
             }
 
             @media (max-width: 576px) {
                 font-size: 50px;
-                margin-left: 5px;
             }
         }
 
@@ -41,31 +42,30 @@
                 display: flex;
                 justify-content: space-between;
                 width: 60%;
-                margin-right: 30px;
                 
                 .header-nav-div-ul-li {
                     font-family: $title;
-                    font-size: 50px;
+                    font-size: 35px;
                     transition: 0.2s;
 
                     @media (max-width: 1400px) {
-                        font-size: 35px;
+                        font-size: 30px;
                     }
 
                     @media (max-width: 1200px) {
-                        font-size: 30px;
+                        font-size: 25px;
                     }
 
                     @media (max-width: 992px) {
-                        font-size: 30px;
+                        font-size: 25px;
                     }
 
                     @media (max-width: 768px) {
-                        font-size: 30px;
+                        font-size: 25px;
                     }
 
                     @media (max-width: 576px) {
-                        font-size: 30px;
+                        font-size: 25px;
                     }
 
                     a {

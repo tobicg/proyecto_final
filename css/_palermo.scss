@@ -1,0 +1,114 @@
+.main-palermo {
+    background-color: rgb(165, 165, 165);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: stretch;
+    align-items: center;
+
+    .main-palermo-div1 {
+        padding: 20px 10px 20px 20px;
+
+        #palermo1 {
+            color: white;
+            text-decoration: none;
+            background-image: url(../img/sucursal1.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            min-height: 45vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 0 0 20px black;
+            transition: 0.4s;
+            margin-bottom: 10px;
+    
+            &:hover {
+                box-shadow: 0px 0px 20px 10px black;
+                z-index: 1000;
+                transform: scale(1.03);
+            }
+    
+            h2 {
+                font-family: $title;
+                font-size: 70px;
+            }
+        }
+
+        .main-palermo-div1-map {
+            margin-top: 10px;
+            width: 100%;
+            min-height: 45vh;
+        }
+    }
+
+    .main-palermo-div2 {
+        padding: 20px 20px 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .main-palermo-div2-body {
+            background-color: #fff;
+            width: 60%;
+            min-height: 80vh;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .main-palermo-div2-body-logo {
+                font-family: $title;
+                font-size: 80px;
+                color: black;
+                margin-bottom: 30px;
+            }
+            
+            .main-palermo-div2-body-title {
+                font-family: $text;
+                font-size: 40px;
+                color: black;
+                margin-bottom: 10px;
+            }
+
+            .main-palermo-div2-body-subtitle {
+                font-family: $text;
+                font-size: 30px;
+                color: black;
+                margin-bottom: 50px;
+            }
+
+            .main-palermo-div2-body-horarios {
+                font-family: $text;
+                font-size: 30px;
+                color: black;
+                margin-bottom: 10px;
+            }
+
+            .main-palermo-div2-body-dias {
+                font-family: $title;
+                font-size: 40px;
+                color: black;
+                margin-bottom: 50px;
+            }
+
+            .main-palermo-div2-body-tel {
+                font-family: $text;
+                font-size: 40px;
+                color: black;
+                margin-bottom: 10px;
+            }
+
+            .main-palermo-div2-body-num {
+                font-family: $text;
+                font-size: 30px;
+                color: black;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+}
