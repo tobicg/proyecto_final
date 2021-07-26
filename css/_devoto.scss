@@ -1,4 +1,4 @@
-.main-palermo {
+.main-devoto {
     background-color: rgb(165, 165, 165);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,17 +12,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(../img/sucursal1.png);
+        background-image: url(../img/sucursal4.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
     }
 
-    .main-palermo-div1 {
+    .main-devoto-div1 {
         grid-row: 1/3;
         color: white;
         text-decoration: none;
-        background-image: url(../img/sucursal1.png);
+        background-image: url(../img/sucursal4.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -45,13 +45,13 @@
         }
     }
 
-    .main-palermo-div2 {
+    .main-devoto-div2 {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
 
-        .main-palermo-div2-card {
+        .main-devoto-div2-card {
             background-color: #fff;
             border-radius: 30px;
             width: 90%;
@@ -85,7 +85,7 @@
         }
     }
 
-    .main-palermo-div3 {
+    .main-devoto-div3 {
         display: flex;
         justify-content: center;
         align-items: center;

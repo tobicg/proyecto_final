@@ -223,10 +223,10 @@
     flex-direction: column;
     width: 100%; }
     .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item {
-      margin: 20px;
+      margin: 30px;
+      padding: 20px;
       border-radius: 15px;
       width: 60%;
-      padding: 20px;
       display: grid;
       grid-template-columns: 1fr 2fr;
       grid-template-rows: 1fr 2fr;
@@ -236,14 +236,11 @@
       transition: 0.4s; }
       @media (max-width: 1400px) {
         .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item {
-          width: 80%; } }
+          width: 70%; } }
       @media (max-width: 768px) {
         .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item {
           width: 80%;
           grid-template-columns: 1fr; } }
-      @media (max-width: 576px) {
-        .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item {
-          width: 85%; } }
       .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item .main-carta-fondo-burgers-item-img {
         width: 80%;
         justify-self: center;
@@ -254,10 +251,7 @@
             width: 90%; } }
         @media (max-width: 768px) {
           .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item .main-carta-fondo-burgers-item-img {
-            width: 55%; } }
-        @media (max-width: 576px) {
-          .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item .main-carta-fondo-burgers-item-img {
-            width: 70%; } }
+            width: 60%; } }
       .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item h3 {
         font-family: "Bebas Neue", cursive;
         font-size: 40px;
@@ -286,8 +280,6 @@
             font-family: "Roboto", sans-serif; }
             .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item .btn-burger:hover {
               box-shadow: none; } }
-      .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item:hover {
-        box-shadow: 0px 0px 20px 10px; }
   .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos {
     display: grid;
     justify-items: center;
@@ -313,8 +305,6 @@
       color: white;
       background-color: rgba(26, 26, 26, 0.801);
       transition: 0.4s; }
-      .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item:hover {
-        box-shadow: 0px 0px 20px 10px; }
       .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item .main-carta-fondo-acompanamientos-item-img {
         width: 80%;
         margin: 15px; }
@@ -358,26 +348,31 @@
       color: white;
       background-color: rgba(26, 26, 26, 0.801);
       transition: 0.4s; }
+      @media (max-width: 768px) {
+        .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item {
+          width: 80%; } }
       @media (max-width: 576px) {
         .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item {
-          font-size: 20px; } }
-      .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item:hover {
-        box-shadow: 0px 0px 20px 10px; }
+          font-size: 20px;
+          min-height: 0vh; } }
       .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item .main-carta-fondo-pizzas-item-img {
         width: 80%;
         margin: 15px; }
         @media (max-width: 768px) {
           .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item .main-carta-fondo-pizzas-item-img {
-            width: 70%; } }
+            width: 60%; } }
       .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item h3 {
         font-family: "Bebas Neue", cursive;
         font-size: 40px;
         padding: 20px 10px;
         text-align: center; }
-        @media (max-width: 576px) {
+        @media (max-width: 1200px) {
           .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item h3 {
-            font-size: 40px;
+            font-size: 35px;
             text-align: center; } }
+        @media (max-width: 768px) {
+          .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item h3 {
+            font-size: 40px; } }
       .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item p {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
@@ -385,12 +380,12 @@
         padding: 0px 10px; }
         @media (max-width: 992px) {
           .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item p {
-            font-size: 16px; } }
-        @media (max-width: 576px) {
-          .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item p {
-            font-size: 16px;
+            font-size: 20px;
             justify-self: center;
             text-align: center; } }
+        @media (max-width: 576px) {
+          .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item p {
+            font-size: 16px; } }
 
 .main-sucursales {
   background-color: #a5a5a5;
@@ -398,8 +393,14 @@
   grid-template-columns: 1fr 1fr;
   justify-items: stretch;
   align-items: center; }
+  @media (max-width: 768px) {
+    .main-sucursales {
+      grid-template-columns: 1fr; } }
   .main-sucursales .main-sucursales-div1 {
     padding: 20px 10px 10px 20px; }
+    @media (max-width: 768px) {
+      .main-sucursales .main-sucursales-div1 {
+        padding: 5px 10px; } }
     .main-sucursales .main-sucursales-div1 #sucursal1 {
       color: white;
       text-decoration: none;
@@ -407,7 +408,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      min-height: 45vh;
+      min-height: 40vh;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -423,6 +424,9 @@
         font-size: 70px; }
   .main-sucursales .main-sucursales-div2 {
     padding: 20px 20px 10px 10px; }
+    @media (max-width: 768px) {
+      .main-sucursales .main-sucursales-div2 {
+        padding: 5px 10px; } }
     .main-sucursales .main-sucursales-div2 #sucursal2 {
       color: white;
       text-decoration: none;
@@ -430,7 +434,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      min-height: 45vh;
+      min-height: 40vh;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -446,6 +450,9 @@
         font-size: 70px; }
   .main-sucursales .main-sucursales-div3 {
     padding: 10px 10px 20px 20px; }
+    @media (max-width: 768px) {
+      .main-sucursales .main-sucursales-div3 {
+        padding: 5px 10px; } }
     .main-sucursales .main-sucursales-div3 #sucursal3 {
       color: white;
       text-decoration: none;
@@ -453,7 +460,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      min-height: 45vh;
+      min-height: 40vh;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -469,6 +476,9 @@
         font-size: 70px; }
   .main-sucursales .main-sucursales-div4 {
     padding: 10px 20px 20px 10px; }
+    @media (max-width: 768px) {
+      .main-sucursales .main-sucursales-div4 {
+        padding: 5px 10px; } }
     .main-sucursales .main-sucursales-div4 #sucursal4 {
       color: white;
       text-decoration: none;
@@ -476,7 +486,7 @@
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
-      min-height: 45vh;
+      min-height: 40vh;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -648,83 +658,326 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: stretch;
-  align-items: center; }
-  .main-palermo .main-palermo-div1 {
-    padding: 20px 10px 20px 20px; }
-    .main-palermo .main-palermo-div1 #palermo1 {
-      color: white;
-      text-decoration: none;
-      background-image: url(../img/sucursal1.png);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      min-height: 45vh;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-shadow: 0 0 20px black;
-      transition: 0.4s;
-      margin-bottom: 10px; }
-      .main-palermo .main-palermo-div1 #palermo1:hover {
-        box-shadow: 0px 0px 20px 10px black;
-        z-index: 1000;
-        transform: scale(1.03); }
-      .main-palermo .main-palermo-div1 #palermo1 h2 {
-        font-family: "Bebas Neue", cursive;
-        font-size: 70px; }
-    .main-palermo .main-palermo-div1 .main-palermo-div1-map {
-      margin-top: 10px;
-      width: 100%;
-      min-height: 45vh; }
-  .main-palermo .main-palermo-div2 {
-    padding: 20px 20px 20px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .main-palermo .main-palermo-div2 .main-palermo-div2-body {
-      background-color: #fff;
-      width: 60%;
-      min-height: 80vh;
-      border-radius: 30px;
+  align-items: center;
+  padding: 20px; }
+  @media (max-width: 992px) {
+    .main-palermo {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
-      .main-palermo .main-palermo-div2 .main-palermo-div2-body .main-palermo-div2-body-logo {
+      align-items: center;
+      background-image: url(../img/sucursal1.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; } }
+  .main-palermo .main-palermo-div1 {
+    grid-row: 1/3;
+    color: white;
+    text-decoration: none;
+    background-image: url(../img/sucursal1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    border-radius: 30px; }
+    .main-palermo .main-palermo-div1 h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 90px; }
+    @media (max-width: 992px) {
+      .main-palermo .main-palermo-div1 {
+        display: none; } }
+  .main-palermo .main-palermo-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-palermo .main-palermo-div2 .main-palermo-div2-card {
+      background-color: #fff;
+      border-radius: 30px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 0 20px black;
+      margin-bottom: 10px; }
+      @media (max-width: 992px) {
+        .main-palermo .main-palermo-div2 .main-palermo-div2-card {
+          width: 90%; } }
+      .main-palermo .main-palermo-div2 .main-palermo-div2-card .title {
         font-family: "Bebas Neue", cursive;
         font-size: 80px;
-        color: black;
-        margin-bottom: 30px; }
-      .main-palermo .main-palermo-div2 .main-palermo-div2-body .main-palermo-div2-body-title {
+        margin: 15px; }
+      .main-palermo .main-palermo-div2 .main-palermo-div2-card .subtitle, .main-palermo .main-palermo-div2 .main-palermo-div2-card .dias, .main-palermo .main-palermo-div2 .main-palermo-div2-card .telefono {
         font-family: "Roboto", sans-serif;
-        font-size: 40px;
-        color: black;
-        margin-bottom: 10px; }
-      .main-palermo .main-palermo-div2 .main-palermo-div2-body .main-palermo-div2-body-subtitle {
+        font-size: 30px; }
+      .main-palermo .main-palermo-div2 .main-palermo-div2-card .calle, .main-palermo .main-palermo-div2 .main-palermo-div2-card .horarios, .main-palermo .main-palermo-div2 .main-palermo-div2-card .num {
         font-family: "Roboto", sans-serif;
-        font-size: 30px;
-        color: black;
-        margin-bottom: 50px; }
-      .main-palermo .main-palermo-div2 .main-palermo-div2-body .main-palermo-div2-body-horarios {
-        font-family: "Roboto", sans-serif;
-        font-size: 30px;
-        color: black;
-        margin-bottom: 10px; }
-      .main-palermo .main-palermo-div2 .main-palermo-div2-body .main-palermo-div2-body-dias {
+        font-size: 20px; }
+  .main-palermo .main-palermo-div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-palermo .main-palermo-div3 iframe {
+      border-radius: 30px;
+      width: 90%;
+      align-items: center;
+      min-height: 40vh;
+      box-shadow: 0 0 20px black;
+      margin-top: 10px; }
+
+.main-belgrano {
+  background-color: #a5a5a5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+  padding: 20px; }
+  @media (max-width: 992px) {
+    .main-belgrano {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/sucursal2.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; } }
+  .main-belgrano .main-belgrano-div1 {
+    grid-row: 1/3;
+    color: white;
+    text-decoration: none;
+    background-image: url(../img/sucursal2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    border-radius: 30px; }
+    .main-belgrano .main-belgrano-div1 h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 90px; }
+    @media (max-width: 992px) {
+      .main-belgrano .main-belgrano-div1 {
+        display: none; } }
+  .main-belgrano .main-belgrano-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card {
+      background-color: #fff;
+      border-radius: 30px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 0 20px black;
+      margin-bottom: 10px; }
+      @media (max-width: 992px) {
+        .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card {
+          width: 90%; } }
+      .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card .title {
         font-family: "Bebas Neue", cursive;
-        font-size: 40px;
-        color: black;
-        margin-bottom: 50px; }
-      .main-palermo .main-palermo-div2 .main-palermo-div2-body .main-palermo-div2-body-tel {
+        font-size: 80px;
+        margin: 15px; }
+      .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card .subtitle, .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card .dias, .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card .telefono {
         font-family: "Roboto", sans-serif;
-        font-size: 40px;
-        color: black;
-        margin-bottom: 10px; }
-      .main-palermo .main-palermo-div2 .main-palermo-div2-body .main-palermo-div2-body-num {
+        font-size: 30px; }
+      .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card .calle, .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card .horarios, .main-belgrano .main-belgrano-div2 .main-belgrano-div2-card .num {
         font-family: "Roboto", sans-serif;
-        font-size: 30px;
-        color: black;
-        margin-bottom: 50px; }
+        font-size: 20px; }
+  .main-belgrano .main-belgrano-div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-belgrano .main-belgrano-div3 iframe {
+      border-radius: 30px;
+      width: 90%;
+      align-items: center;
+      min-height: 40vh;
+      box-shadow: 0 0 20px black;
+      margin-top: 10px; }
+
+.main-caballito {
+  background-color: #a5a5a5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+  padding: 20px; }
+  @media (max-width: 992px) {
+    .main-caballito {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/sucursal3.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; } }
+  .main-caballito .main-caballito-div1 {
+    grid-row: 1/3;
+    color: white;
+    text-decoration: none;
+    background-image: url(../img/sucursal3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    border-radius: 30px; }
+    .main-caballito .main-caballito-div1 h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 90px; }
+    @media (max-width: 992px) {
+      .main-caballito .main-caballito-div1 {
+        display: none; } }
+  .main-caballito .main-caballito-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-caballito .main-caballito-div2 .main-caballito-div2-card {
+      background-color: #fff;
+      border-radius: 30px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 0 20px black;
+      margin-bottom: 10px; }
+      @media (max-width: 992px) {
+        .main-caballito .main-caballito-div2 .main-caballito-div2-card {
+          width: 90%; } }
+      .main-caballito .main-caballito-div2 .main-caballito-div2-card .title {
+        font-family: "Bebas Neue", cursive;
+        font-size: 80px;
+        margin: 15px; }
+      .main-caballito .main-caballito-div2 .main-caballito-div2-card .subtitle, .main-caballito .main-caballito-div2 .main-caballito-div2-card .dias, .main-caballito .main-caballito-div2 .main-caballito-div2-card .telefono {
+        font-family: "Roboto", sans-serif;
+        font-size: 30px; }
+      .main-caballito .main-caballito-div2 .main-caballito-div2-card .calle, .main-caballito .main-caballito-div2 .main-caballito-div2-card .horarios, .main-caballito .main-caballito-div2 .main-caballito-div2-card .num {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px; }
+  .main-caballito .main-caballito-div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-caballito .main-caballito-div3 iframe {
+      border-radius: 30px;
+      width: 90%;
+      align-items: center;
+      min-height: 40vh;
+      box-shadow: 0 0 20px black;
+      margin-top: 10px; }
+
+.main-devoto {
+  background-color: #a5a5a5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+  padding: 20px; }
+  @media (max-width: 992px) {
+    .main-devoto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../img/sucursal4.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; } }
+  .main-devoto .main-devoto-div1 {
+    grid-row: 1/3;
+    color: white;
+    text-decoration: none;
+    background-image: url(../img/sucursal4.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    border-radius: 30px; }
+    .main-devoto .main-devoto-div1 h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 90px; }
+    @media (max-width: 992px) {
+      .main-devoto .main-devoto-div1 {
+        display: none; } }
+  .main-devoto .main-devoto-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-devoto .main-devoto-div2 .main-devoto-div2-card {
+      background-color: #fff;
+      border-radius: 30px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 0 20px black;
+      margin-bottom: 10px; }
+      @media (max-width: 992px) {
+        .main-devoto .main-devoto-div2 .main-devoto-div2-card {
+          width: 90%; } }
+      .main-devoto .main-devoto-div2 .main-devoto-div2-card .title {
+        font-family: "Bebas Neue", cursive;
+        font-size: 80px;
+        margin: 15px; }
+      .main-devoto .main-devoto-div2 .main-devoto-div2-card .subtitle, .main-devoto .main-devoto-div2 .main-devoto-div2-card .dias, .main-devoto .main-devoto-div2 .main-devoto-div2-card .telefono {
+        font-family: "Roboto", sans-serif;
+        font-size: 30px; }
+      .main-devoto .main-devoto-div2 .main-devoto-div2-card .calle, .main-devoto .main-devoto-div2 .main-devoto-div2-card .horarios, .main-devoto .main-devoto-div2 .main-devoto-div2-card .num {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px; }
+  .main-devoto .main-devoto-div3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .main-devoto .main-devoto-div3 iframe {
+      border-radius: 30px;
+      width: 90%;
+      align-items: center;
+      min-height: 40vh;
+      box-shadow: 0 0 20px black;
+      margin-top: 10px; }
 
 /*# sourceMappingURL=main.css.map */
