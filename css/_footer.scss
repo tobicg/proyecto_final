@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 0 10px 1px black;
+    position: relative;
+    z-index: 1000;
     
     .footer-title {
         font-family: $title;

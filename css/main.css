@@ -8,7 +8,10 @@
   background-color: #630000;
   display: flex;
   justify-content: center;
-  min-height: 10vh; }
+  min-height: 10vh;
+  box-shadow: 0 0 10px 1px black;
+  position: relative;
+  z-index: 1000; }
   .header .header-nav {
     display: flex;
     justify-content: space-between;
@@ -66,7 +69,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  box-shadow: 0 0 10px 1px black;
+  position: relative;
+  z-index: 1000; }
   .footer .footer-title {
     font-family: "Bebas Neue", cursive;
     font-size: 50px;
@@ -98,19 +104,23 @@
 
 .divisor {
   background-color: #630000;
-  padding: 0;
+  padding: 10px;
   width: 100%;
   min-height: 7vh;
   box-shadow: 0 0 10px 1px black;
-  position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1000;
+  position: relative; }
   .divisor h2 {
     font-family: "Bebas Neue", cursive;
     font-size: 50px;
     color: white;
     margin: 0; }
+    @media (max-width: 576px) {
+      .divisor h2 {
+        font-size: 40px; } }
 
 .main-index .carousel .carousel-inner {
   position: relative; }
@@ -223,7 +233,6 @@
         font-size: 24px;
         color: white;
         width: 60%;
-        margin: 5% 0px 25px 0px;
         text-align: center;
         text-shadow: 1px 1px 3px black; }
         @media (max-width: 1400px) {
@@ -252,7 +261,8 @@
         color: white;
         border-radius: 10px;
         transition: 0.5s;
-        box-shadow: 0 0 10px 1px black; }
+        box-shadow: 0 0 10px 1px black;
+        margin-top: 30px; }
         .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt a:hover {
           transform: translateY(-5px);
           color: #CE1212; }
@@ -278,7 +288,6 @@
       justify-content: space-between;
       align-items: center;
       width: 80%;
-      margin-top: 30px;
       min-height: 25vh; }
       @media (max-width: 768px) {
         .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img {
@@ -288,7 +297,7 @@
         text-align: center; }
         @media (max-width: 768px) {
           .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img a {
-            margin: 30px;
+            margin: 15px;
             width: 100%; } }
         .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img a img {
           width: 100%; }
@@ -395,8 +404,9 @@
       .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center; } }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item {
       margin: 0px 0px 20px 0px;
       border-radius: 15px;
@@ -411,15 +421,15 @@
       transition: 0.4s; }
       @media (max-width: 768px) {
         .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item {
-          width: 38%;
+          width: 60%;
           margin: 15px;
-          height: 30vh; } }
+          min-height: 40vh; } }
       .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item .main-carta-fondo-acompanamientos-item-img {
         width: 70%;
         margin: 15px; }
         @media (max-width: 768px) {
           .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item .main-carta-fondo-acompanamientos-item-img {
-            width: 65%; } }
+            width: 70%; } }
       .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item h3 {
         font-family: "Bebas Neue", cursive;
         font-size: 40px;
@@ -430,7 +440,7 @@
             font-size: 30px; } }
         @media (max-width: 768px) {
           .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item h3 {
-            font-size: 25px; } }
+            font-size: 35px; } }
   .main-carta .main-carta-fondo .main-carta-fondo-pizzas {
     display: grid;
     justify-items: center;
@@ -486,7 +496,8 @@
         font-family: "Roboto", sans-serif;
         font-size: 18px;
         width: 90%;
-        padding: 0px 10px; }
+        padding: 0px 10px;
+        text-align: center; }
         @media (max-width: 992px) {
           .main-carta .main-carta-fondo .main-carta-fondo-pizzas .main-carta-fondo-pizzas-item p {
             font-size: 20px;
