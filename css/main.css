@@ -300,7 +300,10 @@
             margin: 15px;
             width: 100%; } }
         .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img a img {
-          width: 100%; }
+          width: 100%;
+          transition: 0.5s; }
+          .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img a img:hover {
+            transform: scale(1.05); }
 
 .main-carta .main-carta-fondo {
   background-image: url(../img/restaurant.jpg);
