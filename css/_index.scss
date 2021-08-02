@@ -1,5 +1,24 @@
-.main-index {
+.divisor {
+    background-color: $color1;
+    padding: 0;
+    width: 100%;
+    min-height: 7vh;
+    box-shadow: 0 0 10px 1px black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    h2 {
+        font-family: $title;
+        font-size: 50px;
+        color: white;
+        margin: 0;
+    }
+}
+
+.main-index {
+    
     .carousel {
 
         .carousel-inner {
@@ -9,6 +28,7 @@
                 position: absolute;
                 margin: 200px;
                 z-index: 1000;
+                text-shadow: 0 0 10px black;
 
                 @media (max-width: 1400px) {
                     margin: 100px;
@@ -89,10 +109,6 @@
                 background-position: center center;
                 background-size: cover;
                 min-height: 90vh;
-
-                @media (max-width: 576px) {
-                    min-height: 75vh;
-                }
             }
 
             #slide2 {
@@ -101,10 +117,6 @@
                 background-position: center center;
                 background-size: cover;
                 min-height: 90vh;
-
-                @media (max-width: 576px) {
-                    min-height: 75vh;
-                }
             }
 
             #slide3 {
@@ -113,10 +125,6 @@
                 background-position: center center;
                 background-size: cover;
                 min-height: 90vh;
-
-                @media (max-width: 576px) {
-                    min-height: 75vh;
-                }
             }
 
             #slide4 {
@@ -125,9 +133,130 @@
                 background-position: center center;
                 background-size: cover;
                 min-height: 90vh;
+            }
+        }
+    }
+}
+
+
+.main-index-nosotros {
+    display: flex;
+    background-color: $color3;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+
+    .main-index-nosotros-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .main-index-nosotros-div-txt {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./../img/nosotrosindex.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            text-shadow: 0 0 20px black;
+
+            p {
+                font-family: $text;
+                font-size: 24px;
+                color: white;
+                width: 60%;
+                margin: 5% 0px 25px 0px;
+                text-align: center;
+                text-shadow: 1px 1px 3px black;
+
+                @media (max-width: 1400px) {
+                    width: 80%;
+                }
+
+                @media (max-width: 1200px) {
+                    width: 90%;
+                }
+
+                @media (max-width: 992px) {
+                    font-size: 20px;
+                }
+
+                @media (max-width: 768px) {
+                    margin-top: 80px;
+                }
 
                 @media (max-width: 576px) {
-                    min-height: 75vh;
+                    font-size: 20px;
+                }
+            }
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                padding: 10px;
+                min-width: 20%;
+                background-color: $color2;
+                font-family: $title;
+                font-size: 25px;
+                color: white;
+                border-radius: 10px;
+                transition: 0.5s;
+                box-shadow: 0 0 10px 1px black;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    color: $color5;
+                }
+
+                @media (max-width: 768px) {
+                    margin-bottom: 30px;
+                    min-width: 40%;
+                }
+            }
+        }
+    }
+}
+
+.main-index-sucursales {
+    display: flex;
+    background-color: $color3;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .main-index-sucursales-div{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        .main-index-sucursales-div-img {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin-top: 30px;
+            min-height: 25vh;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            a {
+                width: 33%;
+                text-align: center;
+                
+                @media (max-width: 768px) {
+                    margin: 30px;
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
                 }
             }
         }

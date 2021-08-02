@@ -35,7 +35,7 @@
             width: 100%;
 
             .main-carta-fondo-burgers-item {
-                margin: 30px;
+                margin: 20px;
                 padding: 20px;
                 border-radius: 15px;
                 width: 60%;
@@ -124,14 +124,16 @@
             }
 
             @media (max-width: 768px) {
-                width: 70%;
-                grid-template-columns: 1fr;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .main-carta-fondo-acompanamientos-item {
                 margin: 0px 0px 20px 0px;
                 border-radius: 15px;
-                width: 90%;
+                width: 80%;
                 padding: 0 0 20px 0;
                 display: flex;
                 flex-direction: column;
@@ -141,8 +143,14 @@
                 background-color: rgba(26, 26, 26, 0.801);
                 transition: 0.4s;
 
+                @media (max-width: 768px) {
+                    width: 38%;
+                    margin: 15px;
+                    height: 30vh;
+                }
+
                 .main-carta-fondo-acompanamientos-item-img {
-                    width: 80%;
+                    width: 70%;
                     margin: 15px;
 
                     @media (max-width: 768px) {
@@ -161,7 +169,7 @@
                     }
 
                     @media (max-width: 768px) {
-                        font-size: 40px;
+                        font-size: 25px;
                     }
                 }
             }

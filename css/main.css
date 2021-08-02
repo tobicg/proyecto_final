@@ -5,9 +5,10 @@
 
 .header {
   width: 100%;
-  background-color: #670f22;
+  background-color: #630000;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 10vh; }
   .header .header-nav {
     display: flex;
     justify-content: space-between;
@@ -58,10 +59,10 @@
         .header .header-nav .header-nav-div .header-nav-div-ul .header-nav-div-ul-li a {
           transition: 0.5s; }
           .header .header-nav .header-nav-div .header-nav-div-ul .header-nav-div-ul-li a:hover {
-            color: #cd0c36; }
+            color: #CE1212; }
 
 .footer {
-  background-color: #670f22;
+  background-color: #630000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,14 +94,31 @@
       margin: 10px;
       transition: 0.2s; }
       .footer .footer-icons .footer-icons-link:hover {
-        color: #cd0c36; }
+        color: #CE1212; }
+
+.divisor {
+  background-color: #630000;
+  padding: 0;
+  width: 100%;
+  min-height: 7vh;
+  box-shadow: 0 0 10px 1px black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .divisor h2 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 50px;
+    color: white;
+    margin: 0; }
 
 .main-index .carousel .carousel-inner {
   position: relative; }
   .main-index .carousel .carousel-inner .main-index-txt {
     position: absolute;
     margin: 200px;
-    z-index: 1000; }
+    z-index: 1000;
+    text-shadow: 0 0 10px black; }
     @media (max-width: 1400px) {
       .main-index .carousel .carousel-inner .main-index-txt {
         margin: 100px; } }
@@ -160,36 +178,120 @@
     background-position: center center;
     background-size: cover;
     min-height: 90vh; }
-    @media (max-width: 576px) {
-      .main-index .carousel .carousel-inner #slide1 {
-        min-height: 75vh; } }
   .main-index .carousel .carousel-inner #slide2 {
     background-image: url(./../img/bg2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     min-height: 90vh; }
-    @media (max-width: 576px) {
-      .main-index .carousel .carousel-inner #slide2 {
-        min-height: 75vh; } }
   .main-index .carousel .carousel-inner #slide3 {
     background-image: url(./../img/bg3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     min-height: 90vh; }
-    @media (max-width: 576px) {
-      .main-index .carousel .carousel-inner #slide3 {
-        min-height: 75vh; } }
   .main-index .carousel .carousel-inner #slide4 {
     background-image: url(./../img/bg4.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     min-height: 90vh; }
-    @media (max-width: 576px) {
-      .main-index .carousel .carousel-inner #slide4 {
-        min-height: 75vh; } }
+
+.main-index-nosotros {
+  display: flex;
+  background-color: #1B1717;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh; }
+  .main-index-nosotros .main-index-nosotros-div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(./../img/nosotrosindex.png);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      text-shadow: 0 0 20px black; }
+      .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt p {
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        color: white;
+        width: 60%;
+        margin: 5% 0px 25px 0px;
+        text-align: center;
+        text-shadow: 1px 1px 3px black; }
+        @media (max-width: 1400px) {
+          .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt p {
+            width: 80%; } }
+        @media (max-width: 1200px) {
+          .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt p {
+            width: 90%; } }
+        @media (max-width: 992px) {
+          .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt p {
+            font-size: 20px; } }
+        @media (max-width: 768px) {
+          .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt p {
+            margin-top: 80px; } }
+        @media (max-width: 576px) {
+          .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt p {
+            font-size: 20px; } }
+      .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt a {
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        min-width: 20%;
+        background-color: #810000;
+        font-family: "Bebas Neue", cursive;
+        font-size: 25px;
+        color: white;
+        border-radius: 10px;
+        transition: 0.5s;
+        box-shadow: 0 0 10px 1px black; }
+        .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt a:hover {
+          transform: translateY(-5px);
+          color: #CE1212; }
+        @media (max-width: 768px) {
+          .main-index-nosotros .main-index-nosotros-div .main-index-nosotros-div-txt a {
+            margin-bottom: 30px;
+            min-width: 40%; } }
+
+.main-index-sucursales {
+  display: flex;
+  background-color: #1B1717;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .main-index-sucursales .main-index-sucursales-div {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; }
+    .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin-top: 30px;
+      min-height: 25vh; }
+      @media (max-width: 768px) {
+        .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img {
+          flex-direction: column; } }
+      .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img a {
+        width: 33%;
+        text-align: center; }
+        @media (max-width: 768px) {
+          .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img a {
+            margin: 30px;
+            width: 100%; } }
+        .main-index-sucursales .main-index-sucursales-div .main-index-sucursales-div-img a img {
+          width: 100%; }
 
 .main-carta .main-carta-fondo {
   background-image: url(../img/restaurant.jpg);
@@ -223,7 +325,7 @@
     flex-direction: column;
     width: 100%; }
     .main-carta .main-carta-fondo .main-carta-fondo-burgers .main-carta-fondo-burgers-item {
-      margin: 30px;
+      margin: 20px;
       padding: 20px;
       border-radius: 15px;
       width: 60%;
@@ -291,12 +393,14 @@
         width: 90%; } }
     @media (max-width: 768px) {
       .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos {
-        width: 70%;
-        grid-template-columns: 1fr; } }
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
     .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item {
       margin: 0px 0px 20px 0px;
       border-radius: 15px;
-      width: 90%;
+      width: 80%;
       padding: 0 0 20px 0;
       display: flex;
       flex-direction: column;
@@ -305,8 +409,13 @@
       color: white;
       background-color: rgba(26, 26, 26, 0.801);
       transition: 0.4s; }
+      @media (max-width: 768px) {
+        .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item {
+          width: 38%;
+          margin: 15px;
+          height: 30vh; } }
       .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item .main-carta-fondo-acompanamientos-item-img {
-        width: 80%;
+        width: 70%;
         margin: 15px; }
         @media (max-width: 768px) {
           .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item .main-carta-fondo-acompanamientos-item-img {
@@ -321,7 +430,7 @@
             font-size: 30px; } }
         @media (max-width: 768px) {
           .main-carta .main-carta-fondo .main-carta-fondo-acompanamientos .main-carta-fondo-acompanamientos-item h3 {
-            font-size: 40px; } }
+            font-size: 25px; } }
   .main-carta .main-carta-fondo .main-carta-fondo-pizzas {
     display: grid;
     justify-items: center;
@@ -416,12 +525,14 @@
       text-shadow: 0 0 20px black;
       transition: 0.4s; }
       .main-sucursales .main-sucursales-div1 #sucursal1:hover {
-        box-shadow: 0px 0px 20px 10px black;
         z-index: 1000;
-        transform: scale(1.03); }
+        transform: scale(1.02); }
       .main-sucursales .main-sucursales-div1 #sucursal1 h2 {
         font-family: "Bebas Neue", cursive;
         font-size: 70px; }
+      @media (max-width: 768px) {
+        .main-sucursales .main-sucursales-div1 #sucursal1 {
+          min-height: 30vh; } }
   .main-sucursales .main-sucursales-div2 {
     padding: 20px 20px 10px 10px; }
     @media (max-width: 768px) {
@@ -441,10 +552,12 @@
       align-items: center;
       text-shadow: 0 0 20px black;
       transition: 0.4s; }
+      @media (max-width: 768px) {
+        .main-sucursales .main-sucursales-div2 #sucursal2 {
+          min-height: 30vh; } }
       .main-sucursales .main-sucursales-div2 #sucursal2:hover {
-        box-shadow: 0px 0px 20px 10px black;
         z-index: 1000;
-        transform: scale(1.03); }
+        transform: scale(1.02); }
       .main-sucursales .main-sucursales-div2 #sucursal2 h2 {
         font-family: "Bebas Neue", cursive;
         font-size: 70px; }
@@ -467,10 +580,12 @@
       align-items: center;
       text-shadow: 0 0 20px black;
       transition: 0.4s; }
+      @media (max-width: 768px) {
+        .main-sucursales .main-sucursales-div3 #sucursal3 {
+          min-height: 30vh; } }
       .main-sucursales .main-sucursales-div3 #sucursal3:hover {
-        box-shadow: 0px 0px 20px 10px black;
         z-index: 1000;
-        transform: scale(1.03); }
+        transform: scale(1.02); }
       .main-sucursales .main-sucursales-div3 #sucursal3 h2 {
         font-family: "Bebas Neue", cursive;
         font-size: 70px; }
@@ -493,10 +608,12 @@
       align-items: center;
       text-shadow: 0 0 20px black;
       transition: 0.4s; }
+      @media (max-width: 768px) {
+        .main-sucursales .main-sucursales-div4 #sucursal4 {
+          min-height: 30vh; } }
       .main-sucursales .main-sucursales-div4 #sucursal4:hover {
-        box-shadow: 0px 0px 20px 10px black;
         z-index: 1000;
-        transform: scale(1.03); }
+        transform: scale(1.02); }
       .main-sucursales .main-sucursales-div4 #sucursal4 h2 {
         font-family: "Bebas Neue", cursive;
         font-size: 70px; }
@@ -587,7 +704,7 @@
       font-size: 70px;
       margin-top: 40px;
       margin-bottom: 40px;
-      color: #6a041a; }
+      color: #810000; }
       @media (max-width: 1400px) {
         .contacto .contacto-card .contacto-card-h2 {
           font-size: 70px;
@@ -647,7 +764,7 @@
         padding: 15px;
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        background-color: #9a0526;
+        background-color: #1B1717;
         color: white;
         border: none;
         margin: 40px; }
