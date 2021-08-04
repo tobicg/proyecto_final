@@ -763,7 +763,8 @@
           height: 6vh;
           font-family: "Roboto", sans-serif;
           border: none;
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          background-color: #fff; }
           @media (max-width: 768px) {
             .contacto .contacto-card .contacto-card-form .contacto-card-form-div .contacto-card-form-div-text {
               width: 100%; } }
