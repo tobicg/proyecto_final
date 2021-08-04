@@ -643,6 +643,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 576px) {
+    .nosotros {
+      background-position: top left; } }
   .nosotros .nosotros-div {
     display: flex;
     flex-direction: column;
