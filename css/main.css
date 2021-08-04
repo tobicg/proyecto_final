@@ -633,12 +633,12 @@
         font-size: 70px; }
 
 .nosotros {
-  background-image: url(../img/personas.jpg);
+  background-image: url(../img/personas.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -649,13 +649,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 80vh;
-    background: rgba(0, 0, 0, 0.5); }
+    min-height: 90vh; }
     .nosotros .nosotros-div .nosotros-div-title {
       font-family: "Bebas Neue", cursive;
       font-size: 80px;
       color: white;
-      margin-top: 40px; }
+      margin-top: 40px;
+      text-shadow: 0 0 10px black; }
       @media (max-width: 1400px) {
         .nosotros .nosotros-div .nosotros-div-title {
           font-size: 70px; } }
@@ -665,25 +665,16 @@
       @media (max-width: 992px) {
         .nosotros .nosotros-div .nosotros-div-title {
           font-size: 50px; } }
-      @media (max-width: 768px) {
-        .nosotros .nosotros-div .nosotros-div-title {
-          font-size: 50px; } }
-      @media (max-width: 576px) {
-        .nosotros .nosotros-div .nosotros-div-title {
-          font-size: 50px; } }
     .nosotros .nosotros-div .nosotros-div-txt {
       font-family: "Roboto", sans-serif;
       color: white;
       width: 70%;
-      font-size: 40px;
-      text-align: center; }
+      font-size: 30px;
+      text-align: center;
+      text-shadow: 0 0 10px black; }
       @media (max-width: 1400px) {
         .nosotros .nosotros-div .nosotros-div-txt {
-          font-size: 40px;
           width: 90%; } }
-      @media (max-width: 1200px) {
-        .nosotros .nosotros-div .nosotros-div-txt {
-          font-size: 35px; } }
       @media (max-width: 992px) {
         .nosotros .nosotros-div .nosotros-div-txt {
           font-size: 30px; } }
@@ -694,6 +685,131 @@
         .nosotros .nosotros-div .nosotros-div-txt {
           font-size: 20px;
           width: 95%; } }
+
+.nuestro {
+  background-image: url(../img/parrilla.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nuestro .nuestracomida-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    min-height: 40vh;
+    padding-left: 8%; }
+    .nuestro .nuestracomida-div .nuestracomida-div-title {
+      font-family: "Bebas Neue", cursive;
+      font-size: 80px;
+      color: white;
+      margin-top: 40px;
+      text-shadow: 0 0 10px black; }
+      @media (max-width: 1400px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-title {
+          font-size: 70px; } }
+      @media (max-width: 1200px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-title {
+          font-size: 60px; } }
+      @media (max-width: 992px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-title {
+          font-size: 50px; } }
+      @media (max-width: 768px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-title {
+          font-size: 50px; } }
+      @media (max-width: 576px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-title {
+          font-size: 40px; } }
+    .nuestro .nuestracomida-div .nuestracomida-div-txt {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      width: 70%;
+      font-size: 30px;
+      text-shadow: 0 0 10px black; }
+      @media (max-width: 1400px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-txt {
+          width: 90%; } }
+      @media (max-width: 992px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-txt {
+          font-size: 30px; } }
+      @media (max-width: 768px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-txt {
+          font-size: 25px; } }
+      @media (max-width: 576px) {
+        .nuestro .nuestracomida-div .nuestracomida-div-txt {
+          font-size: 20px;
+          width: 95%; } }
+  .nuestro .nuestroproceso-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 40vh;
+    padding-right: 8%; }
+    .nuestro .nuestroproceso-div .nuestroproceso-div-title {
+      font-family: "Bebas Neue", cursive;
+      font-size: 80px;
+      color: white;
+      margin-top: 40px;
+      text-shadow: 0 0 10px black; }
+      @media (max-width: 1400px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-title {
+          font-size: 70px; } }
+      @media (max-width: 1200px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-title {
+          font-size: 60px; } }
+      @media (max-width: 992px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-title {
+          font-size: 50px; } }
+      @media (max-width: 576px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-title {
+          font-size: 40px; } }
+    .nuestro .nuestroproceso-div .nuestroproceso-div-txt {
+      text-align: end;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      width: 70%;
+      font-size: 30px;
+      text-shadow: 0 0 10px black; }
+      @media (max-width: 1400px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-txt {
+          width: 90%; } }
+      @media (max-width: 992px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-txt {
+          font-size: 30px; } }
+      @media (max-width: 768px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-txt {
+          font-size: 25px; } }
+      @media (max-width: 576px) {
+        .nuestro .nuestroproceso-div .nuestroproceso-div-txt {
+          font-size: 20px;
+          width: 95%; } }
+  .nuestro a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    min-width: 20%;
+    background-color: #810000;
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px 1px black;
+    margin: 10px 0 30px 0; }
+    .nuestro a:hover {
+      transform: translateY(-5px);
+      color: #CE1212; }
+    @media (max-width: 768px) {
+      .nuestro a {
+        margin-bottom: 30px;
+        min-width: 40%; } }
 
 .contacto {
   background-image: url(../img/contacto.png);

@@ -1,10 +1,10 @@
 .nosotros {
-    background-image: url(../img/personas.jpg);
+    background-image: url(../img/personas.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,14 +16,82 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 80vh;
-        background: rgba(0, 0, 0, 0.5);
+        min-height: 90vh;
 
         .nosotros-div-title {
             font-family: $title;
             font-size: 80px;
             color: white;
             margin-top: 40px;
+            text-shadow: 0 0 10px black;
+
+            @media (max-width: 1400px) {
+                font-size: 70px;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 60px;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 50px;
+            }
+        }
+
+        .nosotros-div-txt {
+            font-family: $text;
+            color: white;
+            width: 70%;
+            font-size: 30px;
+            text-align: center;
+            text-shadow: 0 0 10px black;
+
+            @media (max-width: 1400px) {
+                width: 90%;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 30px;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 25px;
+            }
+            
+            @media (max-width: 576px) {
+                font-size: 20px;
+                width: 95%;
+            }
+        }
+    }
+}
+
+.nuestro {
+    background-image: url(../img/parrilla.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .nuestracomida-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 100%;
+        min-height: 40vh;
+        padding-left: 8%;
+
+        .nuestracomida-div-title {
+            font-family: $title;
+            font-size: 80px;
+            color: white;
+            margin-top: 40px;
+            text-shadow: 0 0 10px black;
 
             @media (max-width: 1400px) {
                 font-size: 70px;
@@ -42,24 +110,19 @@
             }
             
             @media (max-width: 576px) {
-                font-size: 50px;
+                font-size: 40px;
             }
         }
 
-        .nosotros-div-txt {
+        .nuestracomida-div-txt {
             font-family: $text;
             color: white;
             width: 70%;
-            font-size: 40px;
-            text-align: center;
+            font-size: 30px;
+            text-shadow: 0 0 10px black;
 
             @media (max-width: 1400px) {
-                font-size: 40px;
                 width: 90%;
-            }
-            
-            @media (max-width: 1200px) {
-                font-size: 35px;
             }
             
             @media (max-width: 992px) {
@@ -74,6 +137,91 @@
                 font-size: 20px;
                 width: 95%;
             }
+        }
+    }
+
+    .nuestroproceso-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        min-height: 40vh;
+        padding-right: 8%;
+
+        .nuestroproceso-div-title {
+            font-family: $title;
+            font-size: 80px;
+            color: white;
+            margin-top: 40px;
+            text-shadow: 0 0 10px black;
+
+            @media (max-width: 1400px) {
+                font-size: 70px;
+            }
+            
+            @media (max-width: 1200px) {
+                font-size: 60px;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 50px;
+            }
+            
+            @media (max-width: 576px) {
+                font-size: 40px;
+            }
+        }
+
+        .nuestroproceso-div-txt {
+            text-align: end;
+            font-family: $text;
+            color: white;
+            width: 70%;
+            font-size: 30px;
+            text-shadow: 0 0 10px black;
+
+            @media (max-width: 1400px) {
+                width: 90%;
+            }
+            
+            @media (max-width: 992px) {
+                font-size: 30px;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 25px;
+            }
+            
+            @media (max-width: 576px) {
+                font-size: 20px;
+                width: 95%;
+            }
+        }
+    }
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        min-width: 20%;
+        background-color: $color2;
+        font-family: $title;
+        font-size: 25px;
+        color: white;
+        border-radius: 10px;
+        transition: 0.5s;
+        box-shadow: 0 0 10px 1px black;
+        margin: 10px 0 30px 0;
+
+        &:hover {
+            transform: translateY(-5px);
+            color: $color5;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+            min-width: 40%;
         }
     }
 }
