@@ -721,6 +721,8 @@
         width: 80%; } }
     .contacto .contacto-card .contacto-card-h2 {
       font-family: "Bebas Neue", cursive;
+      text-align: center;
+      width: 100%;
       font-size: 70px;
       margin-top: 40px;
       margin-bottom: 40px;
@@ -738,7 +740,7 @@
           font-size: 48px; } }
       @media (max-width: 576px) {
         .contacto .contacto-card .contacto-card-h2 {
-          font-size: 40px; } }
+          font-size: 38px; } }
     .contacto .contacto-card .contacto-card-form {
       display: flex;
       flex-direction: column;
