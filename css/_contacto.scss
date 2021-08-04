@@ -1,5 +1,8 @@
 .contacto {
-    background-color: rgb(165, 165, 165);
+    background-image: url(../img/contacto.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,6 +14,10 @@
         align-items: center;
         justify-content: center;
         width: 60%;
+
+        @media (max-width: 1400px) {
+            width: 80%; 
+        }
 
         @media (max-width: 768px) {
             width: 70%;
@@ -25,31 +32,24 @@
             font-size: 70px;
             margin-top: 40px;
             margin-bottom: 40px;
-            color: $color2;
+            color: white;
+            text-shadow: 0 0 10px black;
 
             @media (max-width: 1400px) {
                 font-size: 70px;
                 margin: 20px;
             }
             
-            @media (max-width: 1200px) {
-                font-size: 70px;
-                margin: 20px;
-            }
-            
             @media (max-width: 992px) {
                 font-size: 60px;
-                margin: 20px;
             }
             
             @media (max-width: 768px) {
-                font-size: 50px;
-                margin: 20px;
+                font-size: 48px;
             }
             
             @media (max-width: 576px) {
                 font-size: 40px;
-                margin: 20px;
             }
         }
 
@@ -62,16 +62,22 @@
             
             .contacto-card-form-div {
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
+                display: grid;
+                min-height: 30vh;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                font-family: $text;
+                color: white;
+                text-shadow: 0 0 10px black;
                 
                 @media (max-width: 768px) {
-                    flex-direction: column; 
+                    grid-template-columns: 1fr;
                 }
                 
                 .contacto-card-form-div-text {
-                    width: 30%;
+                    width: 95%;
                     padding: 15px;
+                    height: 6vh;
                     font-family: $text;
                     border: none;
                     margin-bottom: 20px;
@@ -80,33 +86,69 @@
                         width: 100%; 
                     }
                 }
+
+                h3 {
+                    font-size: 35px;
+                    font-family: $title;
+                }
+
+                #file-upload {
+                    background-color: white;
+                    width: 95%;
+                    border-radius: 10px;
+                    color: black;
+                    font-family: $text;
+
+                    @media (max-width: 768px) {
+                        width: 100%; 
+                    }
+                }
+
+                ::-webkit-file-upload-button {
+                    text-align: center;
+                    min-height: 5vh;
+                    border: none;
+                    padding: 10px;
+                    background-color: $color2;
+                    font-family: $title;
+                    font-size: 20px;
+                    color: white;
+                    border-radius: 10px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    margin-right: 7%;
+
+                    &:hover {
+                        color: $color5;
+                    }
+                }
             }
-
-            .contacto-card-form-textarea {
-                width: 100%;
-                height: 400px;
-                padding: 15px;
-                font-family: $text;
+            
+            .contacto-card-form-submit {
+                text-align: center;
+                text-decoration: none;
                 border: none;
+                padding: 10px;
+                min-width: 20%;
+                background-color: $color2;
+                font-family: $title;
+                font-size: 25px;
+                color: white;
+                border-radius: 10px;
+                transition: 0.5s;
+                box-shadow: 0 0 10px 1px black;
+                margin-top: 30px;
+                cursor: pointer;
 
-                @media (max-width: 1400px) {
-                    height: 350px;
+                &:hover {
+                    transform: translateY(-5px);
+                    color: $color5;
                 }
 
                 @media (max-width: 768px) {
-                    height: 230px;
+                    margin-bottom: 30px;
+                    min-width: 40%;
                 }
-            }
-
-            .contacto-card-form-submit {
-                width: 180px;
-                padding: 15px;
-                font-family: $text;
-                font-size: 18px;
-                background-color: $color3;
-                color: white;
-                border: none;
-                margin: 40px;
             }
         }
     }

@@ -696,7 +696,10 @@
           width: 95%; } }
 
 .contacto {
-  background-color: #a5a5a5;
+  background-image: url(../img/contacto.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -707,6 +710,9 @@
     align-items: center;
     justify-content: center;
     width: 60%; }
+    @media (max-width: 1400px) {
+      .contacto .contacto-card {
+        width: 80%; } }
     @media (max-width: 768px) {
       .contacto .contacto-card {
         width: 70%; } }
@@ -718,27 +724,21 @@
       font-size: 70px;
       margin-top: 40px;
       margin-bottom: 40px;
-      color: #810000; }
+      color: white;
+      text-shadow: 0 0 10px black; }
       @media (max-width: 1400px) {
-        .contacto .contacto-card .contacto-card-h2 {
-          font-size: 70px;
-          margin: 20px; } }
-      @media (max-width: 1200px) {
         .contacto .contacto-card .contacto-card-h2 {
           font-size: 70px;
           margin: 20px; } }
       @media (max-width: 992px) {
         .contacto .contacto-card .contacto-card-h2 {
-          font-size: 60px;
-          margin: 20px; } }
+          font-size: 60px; } }
       @media (max-width: 768px) {
         .contacto .contacto-card .contacto-card-h2 {
-          font-size: 50px;
-          margin: 20px; } }
+          font-size: 48px; } }
       @media (max-width: 576px) {
         .contacto .contacto-card .contacto-card-h2 {
-          font-size: 40px;
-          margin: 20px; } }
+          font-size: 40px; } }
     .contacto .contacto-card .contacto-card-form {
       display: flex;
       flex-direction: column;
@@ -747,41 +747,75 @@
       width: 100%; }
       .contacto .contacto-card .contacto-card-form .contacto-card-form-div {
         width: 100%;
-        display: flex;
-        justify-content: space-between; }
+        display: grid;
+        min-height: 30vh;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-shadow: 0 0 10px black; }
         @media (max-width: 768px) {
           .contacto .contacto-card .contacto-card-form .contacto-card-form-div {
-            flex-direction: column; } }
+            grid-template-columns: 1fr; } }
         .contacto .contacto-card .contacto-card-form .contacto-card-form-div .contacto-card-form-div-text {
-          width: 30%;
+          width: 95%;
           padding: 15px;
+          height: 6vh;
           font-family: "Roboto", sans-serif;
           border: none;
           margin-bottom: 20px; }
           @media (max-width: 768px) {
             .contacto .contacto-card .contacto-card-form .contacto-card-form-div .contacto-card-form-div-text {
               width: 100%; } }
-      .contacto .contacto-card .contacto-card-form .contacto-card-form-textarea {
-        width: 100%;
-        height: 400px;
-        padding: 15px;
-        font-family: "Roboto", sans-serif;
-        border: none; }
-        @media (max-width: 1400px) {
-          .contacto .contacto-card .contacto-card-form .contacto-card-form-textarea {
-            height: 350px; } }
-        @media (max-width: 768px) {
-          .contacto .contacto-card .contacto-card-form .contacto-card-form-textarea {
-            height: 230px; } }
+        .contacto .contacto-card .contacto-card-form .contacto-card-form-div h3 {
+          font-size: 35px;
+          font-family: "Bebas Neue", cursive; }
+        .contacto .contacto-card .contacto-card-form .contacto-card-form-div #file-upload {
+          background-color: white;
+          width: 95%;
+          border-radius: 10px;
+          color: black;
+          font-family: "Roboto", sans-serif; }
+          @media (max-width: 768px) {
+            .contacto .contacto-card .contacto-card-form .contacto-card-form-div #file-upload {
+              width: 100%; } }
+        .contacto .contacto-card .contacto-card-form .contacto-card-form-div ::-webkit-file-upload-button {
+          text-align: center;
+          min-height: 5vh;
+          border: none;
+          padding: 10px;
+          background-color: #810000;
+          font-family: "Bebas Neue", cursive;
+          font-size: 20px;
+          color: white;
+          border-radius: 10px;
+          transition: 0.2s;
+          cursor: pointer;
+          margin-right: 7%; }
+          .contacto .contacto-card .contacto-card-form .contacto-card-form-div ::-webkit-file-upload-button:hover {
+            color: #CE1212; }
       .contacto .contacto-card .contacto-card-form .contacto-card-form-submit {
-        width: 180px;
-        padding: 15px;
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        background-color: #1B1717;
-        color: white;
+        text-align: center;
+        text-decoration: none;
         border: none;
-        margin: 40px; }
+        padding: 10px;
+        min-width: 20%;
+        background-color: #810000;
+        font-family: "Bebas Neue", cursive;
+        font-size: 25px;
+        color: white;
+        border-radius: 10px;
+        transition: 0.5s;
+        box-shadow: 0 0 10px 1px black;
+        margin-top: 30px;
+        cursor: pointer; }
+        .contacto .contacto-card .contacto-card-form .contacto-card-form-submit:hover {
+          transform: translateY(-5px);
+          color: #CE1212; }
+        @media (max-width: 768px) {
+          .contacto .contacto-card .contacto-card-form .contacto-card-form-submit {
+            margin-bottom: 30px;
+            min-width: 40%; } }
 
 .main-palermo {
   background-color: #a5a5a5;

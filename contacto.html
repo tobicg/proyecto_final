@@ -47,14 +47,27 @@
   <main>
     <section class="contacto">
       <div class="contacto-card">
-        <h2 class="contacto-card-h2">CONTACTANOS</h2>
+        <h2 class="contacto-card-h2">TRABAJÁ CON NOSOTROS</h2>
         <form class="contacto-card-form" action>
           <div class="contacto-card-form-div">
             <input class="contacto-card-form-div-text" type="text" placeholder="Nombre">
+            <input class="contacto-card-form-div-text" type="text" placeholder="Apellido">
+            <input class="contacto-card-form-div-text" type="text" placeholder="DNI">
             <input class="contacto-card-form-div-text" type="email" placeholder="Email">
-            <input class="contacto-card-form-div-text" type="text" placeholder="Teléfono">
+            <div>
+              <h3>Elegí el local</h3>
+              <select class="contacto-card-form-div-text" id="exampleFormControlSelect1">
+                <option class="option">Palermo</option>
+                <option>Belgrano</option>
+                <option>Caballito</option>
+                <option>Devoto</option>
+              </select>
+            </div>
+            <div>
+              <h3>Mandanos tu CV</h3>
+              <input id="file-upload" type="file">
+            </div>
           </div>
-          <textarea class="contacto-card-form-textarea" type="text" cols="30" rows="10" placeholder="Mensaje"></textarea>
           <input class="contacto-card-form-submit" type="submit">
         </form>
       </div>
