@@ -40,6 +40,10 @@
       display: flex;
       justify-content: space-between;
       width: 60%; }
+      @media (max-width: 992px) {
+        .header .header-nav .header-nav-div .header-nav-div-ul {
+          text-align: center;
+          width: 100%; } }
       .header .header-nav .header-nav-div .header-nav-div-ul .header-nav-div-ul-li {
         font-family: "Bebas Neue", cursive;
         font-size: 35px;
