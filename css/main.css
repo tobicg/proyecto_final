@@ -162,7 +162,10 @@
         text-decoration: none;
         transition: 0.4s; }
         .footer .footer-app ul li a img {
-          width: 30%; }
+          width: 30%;
+          transition: 0.4s; }
+          .footer .footer-app ul li a img:hover {
+            transform: scale(1.05); }
           @media (max-width: 1400px) {
             .footer .footer-app ul li a img {
               width: 40%; } }
@@ -239,7 +242,7 @@
             width: 44px; }
             @media (max-width: 1400px) {
               .footer .footer-redes ul li a svg {
-                width: 40px; } }
+                width: 35px; } }
             @media (max-width: 1200px) {
               .footer .footer-redes ul li a svg {
                 width: 30px; } }

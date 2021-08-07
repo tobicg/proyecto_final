@@ -112,6 +112,11 @@
 
                     img {
                         width: 30%;
+                        transition: 0.4s;
+                        
+                        &:hover {
+                            transform: scale(1.05);
+                        }
 
                         @media (max-width: 1400px) {
                             width: 40%;
@@ -230,7 +235,7 @@
                         width: 44px;
 
                         @media (max-width: 1400px) {
-                            width: 40px;
+                            width: 35px;
                         }
                 
                         @media (max-width: 1200px) {
